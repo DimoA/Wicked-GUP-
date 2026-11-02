@@ -1,0 +1,7 @@
+{
+  "name": "slidev-addon-commun",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mise en page commune à tous les cours : layouts, encadrés, pied de page, styles, logo.",
+  "keywords": ["slidev-addon"]
+}

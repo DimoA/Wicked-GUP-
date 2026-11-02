@@ -10,7 +10,7 @@ const visible = computed(() => !['titre', 'partie'].includes(($frontmatter as an
 
 <template>
   <footer v-if="visible" class="pied">
-    <img src="/logo_um6p.png" alt="" class="pied__logo" />
+    <img src="./assets/logo_um6p.png" alt="" class="pied__logo" />
     <span class="pied__num">{{ $page }}/{{ $nav.total }}</span>
   </footer>
 </template>

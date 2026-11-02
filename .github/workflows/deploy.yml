@@ -1,4 +1,4 @@
-# Publie la présentation sur GitHub Pages à chaque envoi sur la branche main.
+# Construit tous les cours et la page d'accueil, puis publie sur GitHub Pages à chaque envoi sur main.
 name: Publier sur GitHub Pages
 
 on:
@@ -25,7 +25,7 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npx slidev build --base /${{ github.event.repository.name }}/
+      - run: npm run build -- /${{ github.event.repository.name }}/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

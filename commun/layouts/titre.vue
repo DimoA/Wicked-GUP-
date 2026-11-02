@@ -4,7 +4,7 @@ defineProps<{ seance?: string }>()
 
 <template>
   <div class="slidev-layout titre">
-    <img class="titre__logo" src="/logo_um6p.png" alt="UM6P, Université Mohammed VI Polytechnique" />
+    <img class="titre__logo" src="../assets/logo_um6p.png" alt="UM6P, Université Mohammed VI Polytechnique" />
     <div class="titre__corps">
       <div v-if="seance" class="titre__seance">{{ seance }}</div>
       <slot />
