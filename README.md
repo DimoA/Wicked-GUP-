@@ -5,6 +5,7 @@ Présentations Slidev de mes cours, publiées sur GitHub Pages :
 
 | Cours | En ligne |
 |---|---|
+| Cours : Propager une incertitude (M114) | https://dimoa.github.io/Wicked-GUP-/cours1-incertitude/ |
 | TD-I : Propager une incertitude (M114) | https://dimoa.github.io/Wicked-GUP-/td1-incertitude/ |
 
 ## Organisation
