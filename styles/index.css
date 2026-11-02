@@ -1,0 +1,61 @@
+/* Identité sobre, alignée sur le deck Beamer : une couleur d'accent, du gris. */
+:root {
+  --encre: #1b2733;
+  --accent: #1f4e79;
+  --gris-texte: #5b6670;
+  --filet: #d5dbe0;
+  --fond-bloc: #f1f3f5;
+}
+
+.slidev-layout {
+  color: var(--encre);
+  font-size: 1.12rem;
+  line-height: 1.5;
+  padding: 2.2rem 3.2rem 2.6rem;
+}
+
+/* Titre de diapositive : texte en accent, filet gris dessous */
+.slidev-layout h1 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--accent);
+  padding-bottom: 0.45rem;
+  margin-bottom: 1.1rem;
+  border-bottom: 1px solid var(--filet);
+}
+.slidev-layout h1 + p { opacity: 1; }
+.slidev-layout h3 { font-size: 1.05rem; font-weight: 700; color: var(--accent); margin: 0.2rem 0 0.4rem; }
+
+.slidev-layout p { margin: 0.45rem 0; }
+.slidev-layout ul, .slidev-layout ol { margin: 0.4rem 0 0.4rem 1.2rem; }
+.slidev-layout li { margin: 0.22rem 0; }
+.slidev-layout ul li::marker { color: var(--accent); }
+.slidev-layout ol li::marker { color: var(--accent); font-weight: 700; }
+
+.slidev-layout strong { font-weight: 700; color: var(--accent); }
+.gris { color: var(--gris-texte); }
+.petit { font-size: 0.88rem; }
+
+/* Tableaux : filets horizontaux seulement */
+.slidev-layout table { border-collapse: collapse; margin: 0.4rem auto; font-size: 0.95rem; width: auto; min-width: 55%; }
+.slidev-layout th { font-weight: 700; text-align: left; border-bottom: 1.5px solid var(--encre); padding: 0.3rem 0.9rem; }
+.slidev-layout td { border-bottom: 1px solid var(--filet); padding: 0.28rem 0.9rem; }
+.slidev-layout tr:last-child td { border-bottom: 1.5px solid var(--encre); }
+
+/* Code */
+.slidev-layout pre, .slidev-layout .slidev-code { font-size: 0.82rem !important; line-height: 1.45 !important; }
+
+/* Formules */
+.katex-display { margin: 0.6rem 0 !important; }
+
+/* Figures */
+.figure { display: block; margin: 0 auto; max-height: 21rem; }
+
+/* Schéma du principe de Monte-Carlo */
+.flux { display: flex; align-items: center; justify-content: center; gap: 0.6rem; margin: 1.1rem 0 1rem; }
+.flux__etape { border: 1px solid #b9c2ca; background: var(--fond-bloc); border-radius: 4px; padding: 0.55rem 1rem; text-align: center; font-size: 0.95rem; min-width: 10rem; }
+.flux__etape span { color: var(--gris-texte); font-size: 0.88rem; }
+.flux__lien { color: var(--gris-texte); font-size: 0.8rem; text-align: center; position: relative; padding: 0 1.2rem 0.9rem; }
+.flux__lien::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0.35rem; border-bottom: 1px solid #9aa4ad; }
+.flux__lien::before { content: ""; position: absolute; right: -1px; bottom: 0.1rem; border: 0.25rem solid transparent; border-left: 0.4rem solid #9aa4ad; }
